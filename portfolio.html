@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="loop">Engineer...</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-container">
+            <h3>Hi, Myselt</h3>
+            <h1>Nitish Chavan</h1>
+            <h3>And I'm an <span>Electronic and Telecommunication Engineer</span></h3>
+
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nitish-chavan-983635294" target="_blank"
+                    title="Visit my LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nitish619" target="_blank" title="Visit my GitHub Profile"><i
+                        class="fa-brands fa-github"></i></a>
+
+            </div>
+            <button onclick="downloadResume()" class="btn">Download CV</button>
+        </div>
+
+        <div class="home-img">
+            <img src="image/nitish_profiledp.webp" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image/nitish_aboutpic.webp" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Electronic And Telecommunication Engineer</h3>
+            <p>Recent graduate with excellent research, technical, and problem-solving skills. Detail-oriented and able
+                to learn new concepts quickly, with the ability to contribute to a team environment and a higher degree
+                of professionalism and skills. Demonstrate the ability to contribute multiple tasks concurrently and
+                deliver results in a fast-paced environment, as well as the ability to perform under a stringent
+                timeline.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="education">
+        <h2 class="heading">My <span>Qualification</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <h3>Don Bosco Institute of Technology Mumbai</h3>
+                <p>B.E. - Electronics & Telecommunication Engineering | CGPA: 7.48 / 10</p>
+            </div>
+
+            <div class="services-box">
+                <h3>Yashwantrao Chavan college</h3>
+                <p>12th | HSC | Percentage: 62.77 / 100</p>
+            </div>
+
+            <div class="services-box">
+                <h3>Tilak International School </h3>
+                <p>10th | SSC | Percentage: 72.40 / 100</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="image/multiobject.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Multi object detection and analysis with different sensors</h4>
+                    <p>We develop a system that is capable of adjusting light. (Technologies/Tools Used: LiDAR Sensors,
+                        IR Sensors, Arduino UNO, Arduino IDE.)</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/uart.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Design and implementation of uart using verilog</h4>
+                    <p>UART is designed using Verilog and implemented successfully on Spartan6 FPGA Board. Functionality
+                        of UART is demonstrated by interfacing Bluetooth module HC05 and transferring numbers serially
+                        from mobile application to LED on FPGA Board with 650 baud rate.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/stm32board.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Password based security lock system using STM32</h4>
+                    <p>Made a security door lock, when the entered password is compared with the known password. This
+                        microcontroller is based on the STM32. </p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/Frost_eommerce.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>E-commerce website(MERN STACK)</h4>
+                    <p>I have built an e-commerce website using the MERN stack for purchasing products online. The platform offers a seamless shopping experience with product browsing, secure checkout, and user-friendly features.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/nikestore.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>E-commerce Website (Nike Store)</h4>
+                    <p>Designed and developed a dynamic e-commerce website for a Nike store using HTML, CSS, and
+                        JavaScript.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/youtubepage.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>YouTube clone</h4>
+                    <p>I have develop a YouTube web page clone using HTML and CSS</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="full name">
+                <input type="email" placeholder="email address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="mobile number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <div class="self-detail">
+            <p>9664226366 | nitishchavan937@gmail.com | www.linkedin.com/in/nitish-chavan-983635294</p>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-item">
+            <p>Copyright &copy; 2024 by @nitishchavan | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
