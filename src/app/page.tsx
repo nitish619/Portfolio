@@ -42,7 +42,7 @@ export default function Home() {
         <section className="p-6 shadow-lg bg-slate-800 flex items-center h-auto">
         <div className="flex flex-col ml-36">
           <p className="mt-16 text-lg">
-                  Hi, I'm
+                  Hi, I&#39;m
                 </p>
             <h1 className="text-8xl mt-10 font-bold text-blue-600">Nitish</h1>
             <h2 className="text-6xl font-bold mt-10 w-2/3">Electronics & Telecomm. Engineer.</h2>
@@ -61,7 +61,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center justify-center p-20">
               <div className="w-full md:w-1/2 flex flex-col justify-center">
                 <p className="mt-4 text-lg">
-                  Hi, I'm Nitish! I'm an Electronics and Telecommunication Engineer with a passion for software development.
+                  Hi, I&#39;m Nitish! I&#39;m an Electronics and Telecommunication Engineer with a passion for software development.
                   I specialize in building dynamic, user-friendly web applications and have experience with technologies like
                   React, Next.js, Tailwind CSS, and the MERN stack.
                 </p>
