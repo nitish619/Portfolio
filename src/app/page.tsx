@@ -39,15 +39,15 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <main>
-        <section className="p-6 shadow-lg bg-slate-800 flex items-center h-auto">
-        <div className="flex flex-col ml-36">
+        <section className="container mx-auto p-6 shadow-lg bg-slate-800 flex flex-col md:flex-row items-center h-auto text-white">
+        <div className="flex flex-col md:ml-20 lg:ml-36 md:text-left">
           <p className="mt-16 text-lg">
                   Hi, I&#39;m
                 </p>
-            <h1 className="text-8xl mt-10 font-bold text-blue-600">Nitish</h1>
-            <h2 className="text-6xl font-bold mt-10 w-2/3">Electronics & Telecomm. Engineer.</h2>
-            <div className="flex mt-10">
-              <p className="my-8 text-lg w-1/2">
+            <h1 className="text-5xl md:text-8xl mt-4 font-bold text-blue-600">Nitish</h1>
+            <h2 className="text-3xl md:text-6xl font-bold mt-6 md:mt-10 md:w-2/3">Electronics & Telecomm. Engineer.</h2>
+            <div className="flex mt-6 md:mt-10 justify-center md:justify-start">
+              <p className="my-4 text-lg w-full md:w-2/3">
                 Outside of coding, I enjoy solving engineering challenges, learning new technologies, and contributing to open-source projects.
               </p>
             </div>
@@ -55,11 +55,11 @@ export default function Home() {
         </section>
 
         {/* About Me Section */}
-        <section id="about" className="min-h-screen bg-slate-600 w-full p-6 shadow-lg flex">
-          <div className="flex flex-col fade-in-section">
+        <section id="about" className="container mx-auto bg-slate-600 w-full p-6 shadow-lg flex h-auto">
+          <div className="flex flex-col fade-in-section h-auto">
             <h2 className="text-3xl font-bold text-blue-400 text-center">About Me</h2>
-            <div className="flex flex-col md:flex-row items-center justify-center p-20">
-              <div className="w-full md:w-1/2 flex flex-col justify-center">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-center p-4 md:p-14 lgp-20">
+              <div className="w-full md:w-1/2 flex flex-col md:justify-center">
                 <p className="mt-4 text-lg">
                   Hi, I&#39;m Nitish! I&#39;m an Electronics and Telecommunication Engineer with a passion for software development.
                   I specialize in building dynamic, user-friendly web applications and have experience with technologies like
@@ -69,11 +69,11 @@ export default function Home() {
                   Outside of coding, I enjoy solving engineering challenges, learning new technologies, and contributing to open-source projects.
                 </p>
               </div>
-              <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
+              <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center md:pl-10">
                 <img
                   src="/nitish_profiledp.webp"
                   alt="Nitish"
-                  className="w-96 h-96 rounded-full object-cover animate-float-up-down"
+                  className="w-52 h-52 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full object-cover animate-float-up-down"
                 />
               </div>
             </div>
@@ -81,10 +81,10 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="bg-slate-800 w-full p-6 shadow-lg min-h-screen">
+        <section id="projects" className="container mx-auto bg-slate-800 w-full p-6 shadow-lg h-auto">
           <div className="fade-in-section">
             <h2 className="text-3xl font-bold text-blue-400 text-center pt-10">Projects</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-12 lg:p-20">
             
               {/* Project 1 */}
               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
@@ -93,9 +93,9 @@ export default function Home() {
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-4 md:p-8 lg:p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold">Multi object detection and analysis with different sensors</h3>
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold">Multi object detection and analysis with different sensors</h3>
                     <p className="mt-2">We develop a system that is capable of adjusting light. (Technologies/Tools Used: LiDAR Sensors,
                       IR Sensors, Arduino UNO, Arduino IDE.)</p>
                   </div>
@@ -109,10 +109,10 @@ export default function Home() {
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-4 md:p-8 lg:p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold">Design and implementation of uart using verilog</h3>
-                    <p className="mt-2">UART is designed using Verilog and implemented successfully on Spartan6 FPGA Board. Functionality of UART is demonstrated by interfacing Bluetooth module HC05 and transferring numbers serially from mobile application to LED on FPGA Board with 650 baud rate.</p>
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold">Design and implementation of uart using verilog</h3>
+                    <p className="mt-2 text-sm md:text-sm lg:text-base">UART is designed using Verilog and implemented successfully on Spartan6 FPGA Board. Functionality of UART is demonstrated by interfacing Bluetooth module HC05 and transferring numbers serially from mobile application to LED on FPGA Board with 650 baud rate.</p>
                   </div>
                 </div>
               </div>
@@ -124,9 +124,9 @@ export default function Home() {
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-4 md:p-8 lg:p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold">Password based security lock system using STM32</h3>
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold">Password based security lock system using STM32</h3>
                     <p className="mt-2">Made a security door lock, when the entered password is compared with the known password. This microcontroller is based on the STM32.</p>
                   </div>
                 </div>
@@ -139,9 +139,9 @@ export default function Home() {
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-4 md:p-8 lg:p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold">E-commerce website(MERN STACK)</h3>
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold">E-commerce website(MERN STACK)</h3>
                     <p className="mt-2">I have built an e-commerce website using the MERN stack for purchasing products online. The platform offers a seamless shopping experience with product browsing, secure checkout, and user-friendly features.</p>
                   </div>
                 </div>
@@ -154,9 +154,9 @@ export default function Home() {
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-4 md:p-8 lg:p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold">E-commerce Website (Nike Store)</h3>
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold">E-commerce Website (Nike Store)</h3>
                     <p className="mt-2">Designed and developed a dynamic e-commerce website for a Nike store using HTML, CSS, and
                     JavaScript.</p>
                   </div>
@@ -170,9 +170,9 @@ export default function Home() {
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-transparent opacity-20 group-hover:opacity-60 flex items-center justify-center text-center p-4 md:p-8 lg:p-16 transform translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold">YouTube clone</h3>
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold">YouTube clone</h3>
                     <p className="mt-2">I have develop a YouTube web page clone using HTML and CSS</p>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="bg-slate-700 w-full py-16 shadow-lg min-h-screen flex flex-col items-center">
+        <section id="skills" className="container mx-auto bg-slate-700 w-full py-16 shadow-lg h-auto flex flex-col items-center">
           <h2 className="text-4xl font-bold text-blue-400 text-center mb-10">Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 p-6">
             {skills.map((skill, index) => (
@@ -195,7 +195,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="min-h-screen bg-slate-800 text-white flex flex-col items-center py-16 px-6">
+        <section id="contact" className="container mx-auto h-auto bg-slate-800 text-white flex flex-col items-center py-16 px-6">
           <h2 className="text-4xl font-bold text-blue-400 text-center mb-10">
             Contact <span className="text-blue-600">Me</span>
           </h2>

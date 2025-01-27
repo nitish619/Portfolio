@@ -13,9 +13,9 @@ const Footer = () => {
 
   return (
     <footer className="text-white p-4 relative">
-      <div className="flex flex-row relative">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-between relative">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="mb-4 flex space-x-4 justify-center">
+          <div className="mb-4 flex flex-col lg:flex-row lg:space-x-4 items-center">
             <p className="mt-2">
               Email: <a href="mailto:nitishchavan937@example.com" className="text-blue-300">nitishchavan937@example.com</a>
             </p>
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         {/* Scroll to Top Button */}
-        <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex justify-center">
+        <div className="absolute top-1/2 right-4 sm:right-6 lg:right-6 transform -translate-y-1/2 flex justify-center">
           <button
             onClick={scrollToTop}
             className="p-3 w-12 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-all"
