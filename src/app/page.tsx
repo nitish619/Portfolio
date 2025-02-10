@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center md:pl-10">
                 <img
-                  src="/nitish_profiledp.webp"
+                  src="/profilepic.png"
                   alt="Nitish"
                   className="w-52 h-52 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full object-cover animate-float-up-down"
                 />
@@ -89,7 +89,7 @@ export default function Home() {
               {/* Project 1 */}
               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
                 <img
-                  src="/multiobject.webp"
+                  src="/object-detect.png"
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
@@ -120,7 +120,7 @@ export default function Home() {
               {/* Project 3 */}
               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
                 <img
-                  src="/stm32board.webp"
+                  src="/stm32.png"
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
@@ -135,7 +135,7 @@ export default function Home() {
               {/* Project 4 */}
               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
                 <img
-                  src="/Frost_eommerce.webp"
+                  src="/frostecommerce.png"
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
@@ -150,7 +150,7 @@ export default function Home() {
               {/* Project 5 */}
               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
                 <img
-                  src="/nikestore.webp"
+                  src="/nikestore.png"
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
@@ -166,7 +166,7 @@ export default function Home() {
               {/* Project 6 */}
               <div className="relative overflow-hidden rounded-2xl shadow-lg group">
                 <img
-                  src="/youtubepage.webp"
+                  src="/yt.png"
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"
                 />
