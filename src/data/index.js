@@ -1,3 +1,4 @@
+import jagruti from "@/assets/company/jagruti.png"
 
 export const navBar = [
   {
@@ -66,3 +67,27 @@ export const projects = [
   },
 ];
 
+export const experiences =[
+  {
+    company: "Google",
+    logo: jagruti, // Replace with actual path
+    title: "Software Engineer",
+    duration: "Jan 2022 - Present",
+    description: [
+      "Developing and maintaining web applications using Next.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+    ],
+  },
+  {
+    company: "Microsoft",
+    logo: jagruti, // Replace with actual path
+    title: "Frontend Developer",
+    duration: "Aug 2020 - Dec 2021",
+    description: [
+      "Developing and maintaining web applications using Next.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+    ],
+  },
+]
