@@ -9,7 +9,7 @@ import Experience from "@/component/Experience";
 export default function Home() {
   
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-cyan-950">
       <main>
         <Hero />
 

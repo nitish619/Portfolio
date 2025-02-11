@@ -2,27 +2,22 @@ import jagruti from "@/assets/company/jagruti.png"
 
 export const navBar = [
   {
-    id : 1,
     name:"Home",
     href:"/",
   },
   {
-    id : 2,
     name:"About",
     href:"#about",
   },
   {
-    id : 3,
+    name:"Experience",
+    href:"#experience",
+  },
+  {
     name:"Projects",
     href:"#projects",
   },
   {
-    id : 4,
-    name:"Skills",
-    href:"#skills",
-  },
-  {
-    id : 5,
     name:"Contact",
     href:"#contact",
   },

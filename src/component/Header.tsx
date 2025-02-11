@@ -23,8 +23,8 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex">
           <ul className="flex space-x-6">
-            {navBar.map((link) => (
-              <li key={link.id}>
+            {navBar.map((link, index) => (
+              <li key={index}>
                 <Link href={link.href} className='hover:text-gray-200'>
                   {link.name}
                 </Link>
@@ -43,8 +43,8 @@ const Header = () => {
       {isOpen && (
         <nav className="md:hidden absolute top-16 left-0 w-full bg-slate-700 shadow-md">
           <ul className="flex flex-col items-left space-y-4 py-4 pl-4">
-            {navBar.map((link) => (
-              <li key={link.id}>
+            {navBar.map((link, index) => (
+              <li key={index}>
                 <Link href={link.href} className="hover:text-gray-200" onClick={() => setIsOpen(false)}>
                   {link.name}
                 </Link>

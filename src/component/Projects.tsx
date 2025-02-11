@@ -21,7 +21,7 @@ function Projects() {
     }, []);
 
   return (
-    <section id="projects" className="container mx-auto bg-slate-800 w-full p-6 shadow-lg h-auto">
+    <section id="projects" className="container mx-auto w-full p-6 shadow-lg h-auto">
           <div className="fade-in-section">
             <h2 className="text-3xl font-bold text-blue-400 text-center pt-10">Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-12 lg:p-20">
