@@ -1,16 +1,22 @@
 import jagruti from "@/assets/company/jagruti.png"
+import objectDetect from "@/assets/object-detect.png"
+import stm32 from "@/assets/stm32.png"
+import yt from "@/assets/yt.png"
+import nikestore from "@/assets/nikestore.png";
+import frostEcommerce from "@/assets/frostecommerce.png";
+import uart from "@/assets/uart.webp";
 
 export const navBar = [
-  {
-    name:"Home",
-    href:"/",
-  },
+  // {
+  //   name:"Home",
+  //   href:"/",
+  // },
   {
     name:"About",
     href:"#about",
   },
   {
-    name:"Experience",
+    name:"Work",
     href:"#experience",
   },
   {
@@ -25,49 +31,43 @@ export const navBar = [
 
 export const projects = [
   {
-    id: 1,
     title: "Multi object detection and analysis with different sensors",
     description: "We develop a system that is capable of adjusting light. (Technologies/Tools Used: LiDAR Sensors, IR Sensors, Arduino UNO, Arduino IDE.)",
-    image: "/object-detect.png"
+    image: objectDetect
   },
   {
-    id: 2,
     title: "Design and implementation of uart using verilog",
     description: "UART is designed using Verilog and implemented successfully on Spartan6 FPGA Board. Functionality of UART is demonstrated by interfacing Bluetooth module HC05 and transferring numbers serially from mobile application to LED on FPGA Board with 650 baud rate.",
-    image: "/uart.webp"
+    image: uart
   },
   {
-    id: 3,
     title: "Password based security lock system using STM32",
     description: "Made a security door lock, when the entered password is compared with the known password. This microcontroller is based on the STM32.",
-    image: "/stm32.png"
+    image: stm32
   },
   {
-    id: 4,
     title: "E-commerce website(MERN STACK)",
     description: "I have built an e-commerce website using the MERN stack for purchasing products online. The platform offers a seamless shopping experience with product browsing, secure checkout, and user-friendly features.",
-    image: "/frostecommerce.png"
+    image: frostEcommerce
   },
   {
-    id: 5,
     title: "E-commerce Website (Nike Store)",
     description: "Designed and developed a dynamic e-commerce website for a Nike store using HTML, CSS, and JavaScript.",
-    image: "/nikestore.png"
+    image: nikestore
   },
   {
-    id: 6,
     title: "YouTube clone",
     description: "I have develop a YouTube web page clone using HTML and CSS",
-    image: "/yt.png"
+    image: yt
   },
 ];
 
 export const experiences =[
   {
-    company: "Google",
+    company: "Jagruti Rehabilition Center",
     logo: jagruti, // Replace with actual path
-    title: "Software Engineer",
-    duration: "Jan 2022 - Present",
+    title: "Web Developer",
+    duration: "Dec 2024 - Present",
     description: [
       "Developing and maintaining web applications using Next.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -75,10 +75,10 @@ export const experiences =[
     ],
   },
   {
-    company: "Microsoft",
+    company: "Jagruti Rehabilition Center",
     logo: jagruti, // Replace with actual path
-    title: "Frontend Developer",
-    duration: "Aug 2020 - Dec 2021",
+    title: "Web Developer Intern",
+    duration: "Oct 2024 - Dec 2024",
     description: [
       "Developing and maintaining web applications using Next.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

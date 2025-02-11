@@ -3,6 +3,8 @@
 import React from 'react';
 import { useEffect } from "react";
 import { projects } from "../data/index";
+import { styles } from '@/utils/style';
+import Image from 'next/image';
 
 function Projects() {
   useEffect(() => {
@@ -21,13 +23,13 @@ function Projects() {
     }, []);
 
   return (
-    <section id="projects" className="container mx-auto w-full p-6 shadow-lg h-auto">
+    <section id="projects" className="container mx-auto w-full p-6 h-auto">
           <div className="fade-in-section">
-            <h2 className="text-3xl font-bold text-blue-400 text-center pt-10">Projects</h2>
+            <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-12 lg:p-20">
-              {projects.map((project) => (
-                <div key={project.id} className="relative overflow-hidden rounded-2xl shadow-lg group">
-                <img
+              {projects.map((project, index) => (
+                <div key={index} className="relative overflow-hidden rounded-2xl shadow-lg group">
+                <Image
                   src= {project.image}
                   alt="Project 1"
                   className="w-full h-60 object-cover transition-transform duration-700 ease-in-out opacity-70 group-hover:scale-110"

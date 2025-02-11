@@ -1,5 +1,7 @@
 'use client';
 
+import { styles } from '@/utils/style';
+import Image from 'next/image';
 import React from 'react'
 import { useEffect } from 'react';
 
@@ -20,9 +22,10 @@ function About() {
       }, []);
 
   return (
-    <section id="about" className="container mx-auto w-full p-6 shadow-lg flex h-auto">
+    <section id="about" className="container mx-auto w-full p-6 flex h-auto">
           <div className="flex flex-col fade-in-section h-auto">
-            <h2 className="text-3xl font-bold text-blue-400 text-center">About Me</h2>
+            <p className={`${styles.sectionSubText} text-center`}>Introduction</p>
+            <h2 className={` ${styles.sectionHeadText} text-center`}>Overview</h2>
             <div className="flex flex-col md:flex-row md:items-center md:justify-center p-4 md:p-14 lgp-20">
               <div className="w-full md:w-1/2 flex flex-col md:justify-center">
                 <p className="mt-4 text-lg">
@@ -35,9 +38,11 @@ function About() {
                 </p>
               </div>
               <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center md:pl-10">
-                <img
+                <Image
                   src="/profilepic.png"
                   alt="Nitish"
+                  width={96}
+                  height={96}
                   className="w-52 h-52 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full object-cover animate-float-up-down"
                 />
               </div>

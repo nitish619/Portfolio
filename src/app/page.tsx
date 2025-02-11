@@ -1,4 +1,3 @@
-
 import Hero from "@/component/Hero";
 import About from "@/component/About";
 import Projects from "@/component/Projects";
@@ -9,7 +8,7 @@ import Experience from "@/component/Experience";
 export default function Home() {
   
   return (
-    <div className="min-h-screen bg-cyan-950">
+    <div className="min-h-screen bg-primary">
       <main>
         <Hero />
 

@@ -1,0 +1,20 @@
+@import "./tailwind.css";
+.bg-primary {
+  background-color: #050816;
+}
+
+.bg-secondary {
+  background-color: #aaa6c3;
+}
+
+.bg-tertiary {
+  background-color: #151030;
+}
+
+.text-primary {
+  color: #151030;
+}
+
+.text-secondary {
+  color: #aaa6c3;
+}

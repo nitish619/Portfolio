@@ -21,9 +21,9 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="container mx-auto w-full py-16 shadow-lg h-auto flex flex-col items-center">
-          <h2 className="text-4xl font-bold text-blue-400 text-center mb-10">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 p-6">
+    <section id="skills" className="container mx-auto w-full py-16 h-auto flex flex-col items-center">
+          {/* <h2 className="text-4xl font-bold text-blue-400 text-center mb-10">Skills</h2> */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8 p-6 justify-center">
             {skills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center p-4 bg-slate-800 rounded-xl shadow-md transition-transform hover:scale-105 hover:bg-slate-700 hover:shadow-lg hover:shadow-slate-400">
                 {skill.icon}

@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-slate-700 text-white p-4 fixed top-0 left-0 w-full shadow-md z-50">
+    <header className="bg-primary text-white p-4 fixed top-0 left-0 w-full shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link
           href='/'

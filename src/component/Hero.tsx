@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className="container mx-auto p-6 shadow-lg flex flex-col md:flex-row items-center h-auto text-white">
+    <section className="container mx-auto p-6 flex flex-col md:flex-row items-center h-auto text-white">
       <div className="flex flex-col md:ml-20 lg:ml-36 md:text-left">
         <p className="mt-16 text-lg">
                 Hi, I&#39;m
