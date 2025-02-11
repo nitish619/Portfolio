@@ -22,11 +22,11 @@ function About() {
       }, []);
 
   return (
-    <section id="about" className="container mx-auto w-full p-6 flex h-auto">
-          <div className="flex flex-col fade-in-section h-auto">
-            <p className={`${styles.sectionSubText} text-center`}>Introduction</p>
-            <h2 className={` ${styles.sectionHeadText} text-center`}>Overview</h2>
-            <div className="flex flex-col md:flex-row md:items-center md:justify-center p-4 md:p-14 lgp-20">
+    <section id="about" className="container mx-auto w-full flex h-auto">
+          <div className="flex flex-col fade-in-section h-auto my-6">
+            <p className={`${styles.sectionSubText} text-left md:text-center`}>Introduction</p>
+            <h2 className={` ${styles.sectionHeadText} text-left md:text-center`}>Overview</h2>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-center">
               <div className="w-full md:w-1/2 flex flex-col md:justify-center">
                 <p className="mt-4 text-lg">
                   Hi, I&#39;m Nitish! I&#39;m an Electronics and Telecommunication Engineer with a passion for software development.

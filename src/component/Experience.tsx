@@ -7,10 +7,10 @@ const Experience = () => {
   return (
     <section id="experience" className="container mx-auto py-12 px-6">
       <div className="m-4">
-      <p className={`${styles.sectionSubText} text-center`}>
+      <p className={`${styles.sectionSubText} text-left md:text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-left md:text-center`}>
           Work Experience
         </h2>
       </div>
@@ -22,8 +22,8 @@ const Experience = () => {
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div key={index} className={`relative flex items-center flex-col ml-6 pl-6 md:ml-0 md:items-start ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
-              <div className="absolute md:left-1/2 left-[-40] flex items-center justify-center w-16 h-16 rounded-full bg-gray-700 border-2 border-white shadow-lg z-10 transform md:-translate-x-1/2">
-                <Image src={exp.logo} alt={exp.company} width={36} height={36} className="rounded-full" />
+              <div className="absolute md:left-1/2 left-[-40] flex items-center justify-center w-16 h-16 rounded-full bg-gray-700 border-4 border-white shadow-lg z-10 transform md:-translate-x-1/2">
+                <Image src={exp.logo} alt={exp.company} width={40} height={40} className="rounded-full" />
               </div>
               <div className="w-full md:w-5/12 lg:w-5/12 bg-gray-800 p-6 mt-6 md:mt-0 ml-10 md:ml-0 md:mr-6 rounded-lg shadow-lg border-b-4 text-white">
                 <h3 className="text-xl font-semibold">{exp.title}</h3>

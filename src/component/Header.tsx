@@ -1,14 +1,24 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { navBar } from '@/data';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="bg-primary text-white p-4 fixed top-0 left-0 w-full shadow-md z-50">
+    <header className={` text-white p-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-primary" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link
           href='/'
@@ -41,7 +51,7 @@ const Header = () => {
       
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <nav className="md:hidden absolute top-16 left-0 w-full bg-slate-700 shadow-md">
+        <nav className="md:hidden absolute top-16 w-[30%] right-0 bg-gradient-to-r from-slate-600 to-black shadow-md mt-2 mr-5 rounded-lg">
           <ul className="flex flex-col items-left space-y-4 py-4 pl-4">
             {navBar.map((link, index) => (
               <li key={index}>

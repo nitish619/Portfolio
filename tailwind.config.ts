@@ -9,6 +9,17 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true, // Ensures centering
+        padding: "2rem", // Default padding for all containers
+        screens: {
+          sm: "600px",
+          md: "750px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1400px", // Custom width
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

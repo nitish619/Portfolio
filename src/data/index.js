@@ -31,34 +31,40 @@ export const navBar = [
 
 export const projects = [
   {
-    title: "Multi object detection and analysis with different sensors",
-    description: "We develop a system that is capable of adjusting light. (Technologies/Tools Used: LiDAR Sensors, IR Sensors, Arduino UNO, Arduino IDE.)",
-    image: objectDetect
-  },
-  {
-    title: "Design and implementation of uart using verilog",
-    description: "UART is designed using Verilog and implemented successfully on Spartan6 FPGA Board. Functionality of UART is demonstrated by interfacing Bluetooth module HC05 and transferring numbers serially from mobile application to LED on FPGA Board with 650 baud rate.",
-    image: uart
-  },
-  {
-    title: "Password based security lock system using STM32",
-    description: "Made a security door lock, when the entered password is compared with the known password. This microcontroller is based on the STM32.",
-    image: stm32
-  },
-  {
     title: "E-commerce website(MERN STACK)",
     description: "I have built an e-commerce website using the MERN stack for purchasing products online. The platform offers a seamless shopping experience with product browsing, secure checkout, and user-friendly features.",
-    image: frostEcommerce
+    image: frostEcommerce,
+    link: "https://github.com/nitish619/ecommerce-mern"
   },
   {
     title: "E-commerce Website (Nike Store)",
     description: "Designed and developed a dynamic e-commerce website for a Nike store using HTML, CSS, and JavaScript.",
-    image: nikestore
+    image: nikestore,
+    link: "https://github.com/nitish619/Nike-store-clone"
   },
   {
     title: "YouTube clone",
     description: "I have develop a YouTube web page clone using HTML and CSS",
-    image: yt
+    image: yt,
+    link: "https://github.com/nitish619/YouTube-clone"
+  },
+  {
+    title: "Multi object detection and analysis with different sensors",
+    description: "We develop a system that is capable of adjusting light. (Technologies/Tools Used: LiDAR Sensors, IR Sensors, Arduino UNO, Arduino IDE.)",
+    image: objectDetect,
+    link: "https://github.com/nitish619"
+  },
+  {
+    title: "Design and implementation of uart using verilog",
+    description: "UART is designed using Verilog and implemented successfully on Spartan6 FPGA Board. Functionality of UART is demonstrated by interfacing Bluetooth module HC05 and transferring numbers serially from mobile application to LED on FPGA Board with 650 baud rate.",
+    image: uart,
+    link: "https://github.com/nitish619"
+  },
+  {
+    title: "Password based security lock system using STM32",
+    description: "Made a security door lock, when the entered password is compared with the known password. This microcontroller is based on the STM32.",
+    image: stm32,
+    link: "https://github.com/nitish619"
   },
 ];
 
