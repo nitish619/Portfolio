@@ -51,8 +51,8 @@ const Header = () => {
       
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <nav className="md:hidden absolute top-16 w-[30%] right-0 bg-gradient-to-r from-slate-600 to-black shadow-md mt-2 mr-5 rounded-lg">
-          <ul className="flex flex-col items-left space-y-4 py-4 pl-4">
+        <nav className="md:hidden absolute top-14 w-[30%] right-0 bg-gradient-to-r from-slate-600 to-black shadow-md mt-1 mr-5 rounded-lg">
+          <ul className="flex flex-col items-left space-y-4 px-4 py-2">
             {navBar.map((link, index) => (
               <li key={index}>
                 <Link href={link.href} className="hover:text-gray-200" onClick={() => setIsOpen(false)}>
