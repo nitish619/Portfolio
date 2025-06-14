@@ -17,13 +17,28 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-4 flex flex-col lg:flex-row lg:space-x-4 items-center">
             <p className="mt-2">
-              Email: <a href="mailto:nitishchavan937@example.com" className="text-blue-300">nitishchavan937@example.com</a>
+              Email:{" "}
+              <a
+                href="mailto:nitishchavan937@example.com"
+                className="text-blue-300"
+              >
+                nitishchavan937@example.com
+              </a>
             </p>
             <p className="mt-2">
-              LinkedIn: <a href="https://www.linkedin.com/in/nitish-chavan-983635294/" className="text-blue-300">linkedin.com/in/nitish</a>
+              LinkedIn:{" "}
+              <a
+                href="https://www.linkedin.com/in/nitish619/"
+                className="text-blue-300"
+              >
+                linkedin.com/in/nitish
+              </a>
             </p>
             <p className="mt-2">
-              GitHub: <a href="https://github.com/nitish619" className="text-blue-300">github.com/nitish</a>
+              GitHub:{" "}
+              <a href="https://github.com/nitish619" className="text-blue-300">
+                github.com/nitish
+              </a>
             </p>
           </div>
 
