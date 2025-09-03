@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/component/Header";
-import Footer from "@/component/Footer";
+import Footer from "@/components/Footer";
 import "@/styles/style.css";
-import MouseTrail from "@/component/MouseTrail";
+// import MouseTrail from "@/components/MouseTrail";
+import { ThemeProvider } from "@/components/DarkMode/theme-provider";
+import { Header } from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nitish Chavan",
-  description: "portfolio",
+  description: "z",
 };
 
 export default function RootLayout({
@@ -31,10 +32,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <MouseTrail />
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {/* <MouseTrail /> */}
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
